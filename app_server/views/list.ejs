@@ -1,0 +1,30 @@
+<!DOCTYPE html> <html>
+ <head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='stylesheets/style.css'/>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+ </head>
+ <body>
+  <ul>
+   <li><a href="/">My Blog</a></li>
+   <li><a href="/list">List Blogs</a></li>
+   <li><a href="/add">Add Blogs</a></li>
+  </ul>
+  <% for(var i=0; i < blogs.length; i++) {%>
+   <div class="entryMain">
+    <div class="entryHeader"></div>
+    <div class="entryBody">
+     <p class="entryText"><%= blogs[i].blogtext%></p>
+   </div>
+   <div class="entryFooter">
+    <a href="/edit">
+     <i class="glyphicon glyphicon-pencil"></i>
+    </a>
+    <a href="/remove">
+     <i class="glyphicon glyphicon-trash"></i>
+    </a>
+   </div>
+   </div>
+   <p></p>
+  <%}%>
+ </body> </html>
