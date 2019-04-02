@@ -1,0 +1,27 @@
+<!DOCTYPE html> <html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='../stylesheets/style.css'/>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/boot strap.min.css'/>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">My Blog</a></li>
+      <li><a href="/list">List Blogs</a></li>
+      <li><a href="/add">Add Blogs</a></li>
+    </ul>
+    <form method="post" action="/remove/<%= blog._id%>">
+      <div class="entryMain">
+	<div class="entryHeader">
+          <p class="entryText"><%= blog.blogtitle%></p>
+	</div>
+	<div class="entryBody">
+          <p class="entryText"><%= blog.blogtext%></p>
+	</div>
+         <div class="entryFooter"></div>
+      </div>
+      <p></p>
+     <input type="submit" value="Delete Blog">
+     </form>
+  </body>
+</html>

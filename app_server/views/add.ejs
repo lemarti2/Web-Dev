@@ -1,0 +1,24 @@
+<!DOCTYPE html> <html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='stylesheets/style.css'/>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">My Blog</a></li>
+      <li><a href="/list">List Blogs</a></li>
+      <li><a href="/add">Add Blogs</a></li>
+    </ul>
+    <h1><%= title %></h1>
+    <form method="post" action="/add">
+      <div class="entryMain">
+         <input class="entryTitle" name="blogtitle"></input>
+         <textarea class="entryText" name="blogtext"></textarea>
+         <div class="entryFooter">
+         </div>
+      </div>
+      <p></p>
+      <input type="submit" value="Add Blog">
+    </form>
+  </body>
+</html>

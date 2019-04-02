@@ -1,0 +1,16 @@
+var express = require('express');
+var router = express.Router();
+var bloghome = require('../controllers/home');
+var bloglist = require('../controllers/blog.js');
+var blogedit = require('../controllers/blog.js');
+var blogremove = require('../controllers/blog.js');
+
+router.get('/', bloghome.home);
+router.get('/list', bloglist.list);
+router.get('/add', bloglist.add);
+router.get('/edit/:blogid', editEntry.edit);
+router.post('/edit/:blogid', editEntry.editBlog);
+router.get('/remove/:blogid', deleteEntry.remove);
+router.post('/add', bloglist.addBlog);
+router.post('/remove/:blgid', deleteEntry.removeBlog);
+module.exports = router;
