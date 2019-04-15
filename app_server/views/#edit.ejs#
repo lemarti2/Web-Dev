@@ -12,7 +12,7 @@
   </ul>
   <form method="post" action="/edit/<%=blog._id%>">
     <br>Blog Title<br>
-    <input class ="blogtitle" id="blogtitle" name="blogtitle" value="<%= blog.blogtittle%>" ><br>
+    <input class="blogtitle" id="blogtitle" name="blogtitle" value="<%= blog.blogtittle%>" ><br>
     Blog Text:<br>
     <textarea class="blogtext" id="blogtext" name="blogtext" row="25" cols="30"><%=blog.blogtext%></textarea><br>
 	<input type="submit" value="Save Blog">

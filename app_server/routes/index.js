@@ -12,5 +12,5 @@ router.get('/edit/:blogid', blogedit.edit);
 router.post('/edit/:blogid', blogedit.editBlog);
 router.get('/remove/:blogid', blogremove.remove);
 router.post('/add', bloglist.addBlog);
-router.post('/remove/:blgid', blogremove.removeBlog);
+router.post('/remove/:blogid', blogremove.removeBlog);
 module.exports = router;

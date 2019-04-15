@@ -15,6 +15,7 @@ mongoose.connection.on('disconnected', function(){
 gracefulShutdown = function(msg, callback) {
     mongoose.connection.close(function(){
 	console.log('Mongoose disconnected through ' + msg);
+	callback();
     });
 };
 process.once('SIGUSR2', function(){
@@ -29,4 +30,4 @@ process.on('SIGTERM', function() {
     gracefulShutdown('Heroku app shutdown', function() {
 	process.exit(0);
 }); });
-require('./blog');
+require('./blog')
