@@ -32,3 +32,111 @@ Mongoose connected to mongodb://localhost/blogger2
 [0mGET /stylesheets/style.css [36m304 [0m0.295 ms - -[0m
 [0mGET / [36m304 [0m0.780 ms - -[0m
 [0mGET /stylesheets/style.css [36m304 [0m0.287 ms - -[0m
+(node:1003) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://tasks:tasks@localhost/tasks
+
+> blogger@0.0.0 start /home/bitnami/lab5
+> node ./bin/www
+
+(node:1040) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://tasks:tasks@localhost/tasks
+[0mGET / [36m304 [0m5.907 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.097 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.138 ms - -[0m
+Getting blogs list
+[]
+[0mGET /api/blogs [36m304 [0m15.711 ms - -[0m
+Getting blogs list
+[]
+[0mGET /api/blogs [36m304 [0m3.477 ms - -[0m
+Mongoose disconnected
+Mongoose disconnected through app termination
+
+> blogger@0.0.0 start /home/bitnami/lab5
+> node ./bin/www
+
+(node:1072) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://tasks:tasks@localhost/tasks
+[0mGET / [36m304 [0m6.952 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.012 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.405 ms - -[0m
+Getting blogs list
+[]
+[0mGET /api/blogs [36m304 [0m16.858 ms - -[0m
+{ blogtitle: '123', blogtext: '456\n' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '123',
+  blogtext: '456\n',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mPOST /api/blogs/ [32m201 [0m31.044 ms - 118[0m
+Getting blogs list
+[ { _id: 5cc0f321d98e0804308a8712,
+    blogtitle: '123',
+    blogtext: '456\n',
+    createdon: 2019-04-24T23:37:05.169Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m5.810 ms - 73[0m
+Finding blog details { blogid: '5cc0f321d98e0804308a8712' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '123',
+  blogtext: '456\n',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f321d98e0804308a8712 [32m200 [0m9.388 ms - 118[0m
+Finding blog details { blogid: '5cc0f321d98e0804308a8712' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '123',
+  blogtext: '456\n',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f321d98e0804308a8712 [36m304 [0m2.503 ms - -[0m
+Updating blog: 5cc0f321d98e0804308a8712
+{ _id: '5cc0f321d98e0804308a8712',
+  blogtitle: '567',
+  blogtext: '899',
+  createdon: '2019-04-24T23:37:05.169Z',
+  __v: 0 }
+(node:1072) DeprecationWarning: collection.findAndModify is deprecated. Use findOneAndUpdate, findOneAndReplace or findOneAndDelete instead.
+[0mPUT /api/blogs/5cc0f321d98e0804308a8712 [32m201 [0m8.207 ms - 118[0m
+Getting blogs list
+[ { _id: 5cc0f321d98e0804308a8712,
+    blogtitle: '567',
+    blogtext: '899',
+    createdon: 2019-04-24T23:37:05.169Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.023 ms - 71[0m
+Finding blog details { blogid: '5cc0f321d98e0804308a8712' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '567',
+  blogtext: '899',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f321d98e0804308a8712 [32m200 [0m2.437 ms - 116[0m
+Finding blog details { blogid: '5cc0f321d98e0804308a8712' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '567',
+  blogtext: '899',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f321d98e0804308a8712 [36m304 [0m2.083 ms - -[0m
+Deleting book entry with id of  5cc0f321d98e0804308a8712
+{}
+[0mDELETE /api/blogs/5cc0f321d98e0804308a8712 [32m204 [0m2.761 ms - -[0m
+Getting blogs list
+[]
+[0mGET /api/blogs [32m200 [0m1.825 ms - 2[0m
+{ blogtitle: 'My first Blog', blogtext: 'Hello' }
+{ _id: 5cc0f342d98e0804308a8713,
+  blogtitle: 'My first Blog',
+  blogtext: 'Hello',
+  createdon: 2019-04-24T23:37:38.225Z,
+  __v: 0 }
+[0mPOST /api/blogs/ [32m201 [0m3.614 ms - 128[0m
+Getting blogs list
+[ { _id: 5cc0f342d98e0804308a8713,
+    blogtitle: 'My first Blog',
+    blogtext: 'Hello',
+    createdon: 2019-04-24T23:37:38.225Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.335 ms - 83[0m

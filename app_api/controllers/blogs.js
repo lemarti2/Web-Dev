@@ -101,7 +101,7 @@ module.exports.blogUpdateOne = function(req, res) {
 };
 
 module.exports.blogDeleteOne = function(req, res) {
-    console.log("Deleting book entry with id of " + req.params.blogid);
+    console.log("Deleting book entry with id of ", req.params.blogid);
     console.log(req.body);
     Blog
         .findByIdAndRemove(req.params.blogid)

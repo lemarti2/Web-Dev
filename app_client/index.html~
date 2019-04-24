@@ -1,0 +1,97 @@
+
+<!DOCTYPE html> 
+<html ng-app="blogApp" lang="en-US"> 
+<head> 
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-ui-router.min.js"></script> 
+<script src="bloggerApp.js"></script> 
+<link rel='stylesheet' href='stylesheets/style.css'/> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+</head> 
+
+<!-- Navigation --> 
+<body ng-controller="homeController"> 
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: #FF3333";>
+  <a class="navbar-brand" href="#/home">My Blogs</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#/list">List Blogs</a>
+      <a class="nav-item nav-link active" href="#/add">Add Blogs</a>
+    </div>
+  </div>
+ </nav>
+
+ <!--Home Page-->
+ <script type="text/ng-template" id="home.html">
+  <h1>{{vm.homeHeader}}</h1>
+  <p>{{vm.homeText}}</p> 
+</script> 
+
+<!--List Page--> 
+<script type="text/ng-template" id="list.html">
+  <h1>{{vm.listHeader}}</h1>
+  <p></p>
+  <div ng-repeat="blog in vm.blogs">
+    <div class="card text-dark bg-white mb-3" style="width: 18rem">
+  <div class="card-body" style="background-color: #FF3333">
+    <h5 class="card-title" style="color: black">{{blog.blogtitle}}</h5>
+    <p class="card-text" style="color: black">{{blog.blogtext}}</p>
+    <a href="#/edit/{{blog._id}}" class ="btn btn-primary">Edit Blog</a>
+    <a href="#/remove/{{blog._id}}" class="btn btn-primary">Delete Blog</i></a>
+  </div> 
+</div> 
+</div> 
+</script> 
+
+<!--Add Page-->
+<script type="text/ng-template" id="add.html">
+  <p></p>
+  <div class="card border-primary" style="width: 50%">
+    <form name="userForm" ng-submit="vm.submit()" ng-controller="addController" style="padding: 20px; background-color: #33FFFF">
+      <div class="form-group" style="background-color: #FF3333">
+      <label for="summary" class="text-primary">Blog Title</label>  
+      <input class="form-control" id="blogtitle" name="blogtitle"> 
+      <label for="detail" class="text-primary">Blog Text</label>
+      <textarea class="form-control" id="blogtext" name="blogtext" rows="3"></textarea>
+      </div>
+      <input type="submit" class="btn btn-primary" value="Add Blog">
+    </form>
+  </div> 
+</script> 
+
+<!-- Edit Page -->
+<script type="text/ng-template" id="edit.html">
+  <p></p>
+  <div class="card border-primary" style="width: 50%">
+    <form name="userForm" ng-submit="vm.submit()" ng-controller="removeController" style="padding: 20px">
+      <div class="form-group">
+        <input class="form-control" id="blogtitle" name="blogtitle" value="{{vm.blogs.blogtitle}}">
+        <textarea class="form-control" id="blogtext" name="blogtext" rows="3">{{vm.blogs.blogtext}}</textarea>
+      </div>
+      <input type="submit" class="btn btn-primary" value="Save Blog">
+    </form>
+  </div> 
+</script> 
+
+<!-- Remove Page -->
+<script type="text/ng-template" id="remove.html">
+  <p></p>
+  <div class="card text-dark bg-white mb-3" style="width: 18rem">
+    <form name="userForm" ng-submit="vm.submit()" ng-controller="removeController" style="padding: 20px">
+      <div class="form-group">
+      <div class="card-body">
+        <h5 class="card-title">{{vm.blogs.blogtitle}}</h5>
+        <p class="card-text">{{vm.blogs.blogtext}}</p>
+      </div>
+      </div>
+      <input type="submit" class="btn btn-primary" value="Delete Blog">
+    </form>
+  </div> 
+</script> 
+
+<div ng-view></div> 
+
+</body>
+</html>
