@@ -31,8 +31,8 @@
   <div class="card-body">
     <h5 class="card-title">{{blog.blogtitle}}</h5>
     <p class="card-text">{{blog.blogtext}}</p>
-    <a ng-show="vm.isLoggedIn()" href="#/remove/{{blog._id}}" class="btn btn-primary">Delete</a>
-    <a ng-show="vm.isLoggedIn()" href="#/edit/{{blog._id}}" class="btn btn-primary">Edit</a>
+    <a ng-show="vm.isLoggedIn() && vm.isAuthor(blog)" href="#/remove/{{blog._id}}" class="btn btn-primary">Delete</a>
+    <a ng-show="vm.isLoggedIn() && vm.isAuthor(blog)" href="#/edit/{{blog._id}}" class="btn btn-primary">Edit</a>
   </div>
     </div>
   </div>
@@ -43,7 +43,7 @@
 
   <script type="text/ng-template" id="add.html">
     <p></p>
-    <div class="card border-primary" style="width: 50%; background-color: #BD9617">
+    <div class="card border-primary" style="width: 50%; background-color: #D82073">
       <form name="userForm" ng-submit="vm.submit()" ng-controller="addController" style="padding: 20px">
 	<div class="form-group">
           <input class="form-control" id="blogtitle" name="blogtitle">
@@ -58,11 +58,11 @@
  
 <script type="text/ng-template" id="edit.html">
   <p></p>
-  <div class="card text-white" style="width: 50%; background-color: #BD9617">
+  <div class="card text-white" style="width: 50%; background-color: #D82073">
     <form name="userForm" ng-submit="vm.submit()" ng-controller="editController" style="padding: 20px">
       <div class="form-group">
-        <input class="form-control" id="blogtitle" name="blogtitle" value="{{vm.blog.blogtitle}}">
-        <textarea class="form-control" id="blogtext" name="blogtext" rows="3">{{vm.blog.blogtext}}</textarea>
+        <input class="form-control" id="blogtitle" name="blogtitle" value="{{vm.blogs.blogtitle}}">
+        <textarea class="form-control" id="blogtext" name="blogtext" rows="3">{{vm.blogs.blogtext}}</textarea>
       </div>
       <input type="submit" class="btn btn-primary" value="Save Blog">
     </form>
@@ -73,7 +73,7 @@
 
 <script type="text/ng-template" id="remove.html">
   <p></p>
-  <div class="card text-white" style="width: 18rem; background-color: #BD9617">
+  <div class="card text-white" style="width: 18rem; background-color: #D82073">
     <form name="userForm" ng-submit="vm.submit()" ng-controller="removeController" style="padding: 20px">
       <div class="card-body">
         <h5 class="card-title">{{vm.blogs.blogtitle}}</h5>

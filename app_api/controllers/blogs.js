@@ -32,19 +32,25 @@ var buildBlogList = function(req, res, results) {
 	blogs.push({
 	    blogtitle: obj.blogtitle,
 	    blogtext: obj.blogtext,
-	    _id: obj._id
+	    _id: obj._id,
+	    userName: obj.userName,
+	    userEmail: obj.userEmail,
+	    createdon: obj.createdon
 	});
     });
     return blogs;
 };
  
-/* POST a new blog */ /* /api/blogs */ 
+/* POST a new blog */ /* /api/blogs */
+
 module.exports.blogCreate = function(req, res) {
     console.log(req.body);
   Blog
 	.create({
 	    blogtitle: req.body.blogtitle,
-	    blogtext: req.body.blogtext
+	    blogtext: req.body.blogtext,
+	    userName: req.body.Username,
+	    userEmail: req.body.userEmail
 	}, function(err, blog) {
 	    if (err) {
 		console.log(err);
@@ -56,6 +62,8 @@ module.exports.blogCreate = function(req, res) {
 	}
 	       );
 };
+
+
 module.exports.blogReadOne = function(req, res) {
     console.log('Finding blog details', req.params);
     if (req.params && req.params.blogid) {
