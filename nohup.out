@@ -1,0 +1,362 @@
+(node:29978) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://localhost/blogger2
+[0mGET / [36m304 [0m10.559 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.425 ms - -[0m
+[0mGET / [36m304 [0m1.331 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.319 ms - -[0m
+[0mGET /list [36m304 [0m1.414 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.267 ms - -[0m
+[0mGET /add [36m304 [0m1.050 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.233 ms - -[0m
+[0mGET /list [36m304 [0m1.075 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.403 ms - -[0m
+[0mGET /list [36m304 [0m1.411 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.585 ms - -[0m
+[0mGET /edit [36m304 [0m1.366 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.330 ms - -[0m
+[0mGET /add [36m304 [0m0.965 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.309 ms - -[0m
+[0mGET / [36m304 [0m0.860 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.381 ms - -[0m
+[0mGET /add [36m304 [0m0.803 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.358 ms - -[0m
+[0mGET /list [36m304 [0m0.926 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.318 ms - -[0m
+[0mGET /remove [36m304 [0m1.125 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.301 ms - -[0m
+[0mGET /list [36m304 [0m0.822 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.273 ms - -[0m
+[0mGET /edit [36m304 [0m0.977 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.277 ms - -[0m
+[0mGET /list [36m304 [0m1.649 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.295 ms - -[0m
+[0mGET / [36m304 [0m0.780 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.287 ms - -[0m
+(node:1003) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://tasks:tasks@localhost/tasks
+
+> blogger@0.0.0 start /home/bitnami/lab5
+> node ./bin/www
+
+(node:1040) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://tasks:tasks@localhost/tasks
+[0mGET / [36m304 [0m5.907 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.097 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.138 ms - -[0m
+Getting blogs list
+[]
+[0mGET /api/blogs [36m304 [0m15.711 ms - -[0m
+Getting blogs list
+[]
+[0mGET /api/blogs [36m304 [0m3.477 ms - -[0m
+Mongoose disconnected
+Mongoose disconnected through app termination
+
+> blogger@0.0.0 start /home/bitnami/lab5
+> node ./bin/www
+
+(node:1072) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://tasks:tasks@localhost/tasks
+[0mGET / [36m304 [0m6.952 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.012 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.405 ms - -[0m
+Getting blogs list
+[]
+[0mGET /api/blogs [36m304 [0m16.858 ms - -[0m
+{ blogtitle: '123', blogtext: '456\n' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '123',
+  blogtext: '456\n',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mPOST /api/blogs/ [32m201 [0m31.044 ms - 118[0m
+Getting blogs list
+[ { _id: 5cc0f321d98e0804308a8712,
+    blogtitle: '123',
+    blogtext: '456\n',
+    createdon: 2019-04-24T23:37:05.169Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m5.810 ms - 73[0m
+Finding blog details { blogid: '5cc0f321d98e0804308a8712' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '123',
+  blogtext: '456\n',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f321d98e0804308a8712 [32m200 [0m9.388 ms - 118[0m
+Finding blog details { blogid: '5cc0f321d98e0804308a8712' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '123',
+  blogtext: '456\n',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f321d98e0804308a8712 [36m304 [0m2.503 ms - -[0m
+Updating blog: 5cc0f321d98e0804308a8712
+{ _id: '5cc0f321d98e0804308a8712',
+  blogtitle: '567',
+  blogtext: '899',
+  createdon: '2019-04-24T23:37:05.169Z',
+  __v: 0 }
+(node:1072) DeprecationWarning: collection.findAndModify is deprecated. Use findOneAndUpdate, findOneAndReplace or findOneAndDelete instead.
+[0mPUT /api/blogs/5cc0f321d98e0804308a8712 [32m201 [0m8.207 ms - 118[0m
+Getting blogs list
+[ { _id: 5cc0f321d98e0804308a8712,
+    blogtitle: '567',
+    blogtext: '899',
+    createdon: 2019-04-24T23:37:05.169Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.023 ms - 71[0m
+Finding blog details { blogid: '5cc0f321d98e0804308a8712' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '567',
+  blogtext: '899',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f321d98e0804308a8712 [32m200 [0m2.437 ms - 116[0m
+Finding blog details { blogid: '5cc0f321d98e0804308a8712' }
+{ _id: 5cc0f321d98e0804308a8712,
+  blogtitle: '567',
+  blogtext: '899',
+  createdon: 2019-04-24T23:37:05.169Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f321d98e0804308a8712 [36m304 [0m2.083 ms - -[0m
+Deleting book entry with id of  5cc0f321d98e0804308a8712
+{}
+[0mDELETE /api/blogs/5cc0f321d98e0804308a8712 [32m204 [0m2.761 ms - -[0m
+Getting blogs list
+[]
+[0mGET /api/blogs [32m200 [0m1.825 ms - 2[0m
+{ blogtitle: 'My first Blog', blogtext: 'Hello' }
+{ _id: 5cc0f342d98e0804308a8713,
+  blogtitle: 'My first Blog',
+  blogtext: 'Hello',
+  createdon: 2019-04-24T23:37:38.225Z,
+  __v: 0 }
+[0mPOST /api/blogs/ [32m201 [0m3.614 ms - 128[0m
+Getting blogs list
+[ { _id: 5cc0f342d98e0804308a8713,
+    blogtitle: 'My first Blog',
+    blogtext: 'Hello',
+    createdon: 2019-04-24T23:37:38.225Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.335 ms - 83[0m
+[0mGET / [36m304 [0m0.581 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.280 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.356 ms - -[0m
+[0mGET / [36m304 [0m0.516 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.251 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.337 ms - -[0m
+Getting blogs list
+[ { _id: 5cc0f342d98e0804308a8713,
+    blogtitle: 'My first Blog',
+    blogtext: 'Hello',
+    createdon: 2019-04-24T23:37:38.225Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.105 ms - -[0m
+Getting blogs list
+[ { _id: 5cc0f342d98e0804308a8713,
+    blogtitle: 'My first Blog',
+    blogtext: 'Hello',
+    createdon: 2019-04-24T23:37:38.225Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.133 ms - -[0m
+Finding blog details { blogid: '5cc0f342d98e0804308a8713' }
+{ _id: 5cc0f342d98e0804308a8713,
+  blogtitle: 'My first Blog',
+  blogtext: 'Hello',
+  createdon: 2019-04-24T23:37:38.225Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f342d98e0804308a8713 [32m200 [0m2.413 ms - 128[0m
+Finding blog details { blogid: '5cc0f342d98e0804308a8713' }
+{ _id: 5cc0f342d98e0804308a8713,
+  blogtitle: 'My first Blog',
+  blogtext: 'Hello',
+  createdon: 2019-04-24T23:37:38.225Z,
+  __v: 0 }
+[0mGET /api/blogs/5cc0f342d98e0804308a8713 [36m304 [0m1.695 ms - -[0m
+[0mGET / [32m200 [0m3.849 ms - 3808[0m
+[0mGET /manager/html [33m404 [0m0.885 ms - 24[0m
+[0mGET / [32m200 [0m12.954 ms - 3808[0m
+[0mGET / [32m200 [0m0.578 ms - 3808[0m
+[0mGET / [32m200 [0m0.565 ms - 3808[0m
+[0mGET / [32m200 [0m1.321 ms - 3808[0m
+[0mGET / [32m200 [0m0.743 ms - 3808[0m
+[0mGET http://110.249.212.46/testget?q=23333&port=80 [33m404 [0m34.257 ms - 24[0m
+[0mGET /.env [33m404 [0m4.352 ms - 24[0m
+[0mGET / [32m200 [0m1.629 ms - 3808[0m
+[0mHEAD /robots.txt [33m404 [0m1.043 ms - 24[0m
+[0mHEAD /robots.txt [33m404 [0m0.537 ms - 24[0m
+[0mGET / [32m200 [0m1.482 ms - 3808[0m
+[0mGET / [32m200 [0m1.225 ms - 3808[0m
+[0mGET /manager/html [33m404 [0m0.555 ms - 24[0m
+[0mGET / [32m200 [0m0.585 ms - 3808[0m
+[0mGET ///dms/polycom/000000000000.cfg.cfg [33m404 [0m0.553 ms - 24[0m
+[0mGET ///server.cfg.cfg [33m404 [0m0.552 ms - 24[0m
+[0mGET ///prov/polycom/000000000000.cfg.cfg [33m404 [0m0.554 ms - 24[0m
+[0mGET ///000000000000.cfg.cfg [33m404 [0m0.571 ms - 24[0m
+[0mGET ///provision/000000000000.cfg.cfg [33m404 [0m1.097 ms - 24[0m
+[0mGET ///dms/000000000000.cfg.cfg [33m404 [0m0.564 ms - 24[0m
+[0mGET ///pv/000000000000.cfg.cfg [33m404 [0m1.099 ms - 24[0m
+[0mGET / [32m200 [0m0.690 ms - 3808[0m
+[0mGET ///cfg//000000000000.cfg.cfg [33m404 [0m0.573 ms - 24[0m
+[0mGET ///phone1.cfg.cfg [33m404 [0m0.592 ms - 24[0m
+[0mGET ///prov//000000000000.cfg.cfg [33m404 [0m0.588 ms - 24[0m
+[0mGET / [32m200 [0m1.200 ms - 3808[0m
+[0mGET / [32m200 [0m1.044 ms - 3808[0m
+[0mGET / [32m200 [0m2.289 ms - 3808[0m
+[0mGET / [32m200 [0m1.063 ms - 3808[0m
+[0mGET / [32m200 [0m1.121 ms - 3808[0m
+[0mGET http://5.188.210.101/echo.php [33m404 [0m36.703 ms - 24[0m
+[0mGET / [32m200 [0m0.628 ms - 3808[0m
+[0mGET / [32m200 [0m1.195 ms - 3808[0m
+[0mGET / [32m200 [0m0.587 ms - 3808[0m
+[0mGET / [32m200 [0m0.573 ms - 3808[0m
+[0mGET http://110.249.212.46/testget?q=23333&port=80 [33m404 [0m0.626 ms - 24[0m
+[0mGET / [32m200 [0m0.562 ms - 3808[0m
+[0mGET / [32m200 [0m0.558 ms - 3808[0m
+[0mGET http://110.249.212.46/testget?q=23333&port=80 [33m404 [0m0.566 ms - 24[0m
+[0mGET / [32m200 [0m0.631 ms - 3808[0m
+[0mGET /robots.txt [33m404 [0m0.585 ms - 24[0m
+[0mGET /sitemap.xml [33m404 [0m0.577 ms - 24[0m
+[0mGET /.well-known/security.txt [33m404 [0m0.546 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.598 ms - 24[0m
+[0mGET / [32m200 [0m0.598 ms - 3808[0m
+[0mGET / [32m200 [0m0.604 ms - 3808[0m
+[0mGET /manager/html [33m404 [0m16.349 ms - 24[0m
+[0mGET /wp-login.php [33m404 [0m0.548 ms - 24[0m
+[0mGET / [32m200 [0m0.574 ms - 3808[0m
+[0mGET / [32m200 [0m0.579 ms - 3808[0m
+[0mGET / [32m200 [0m0.572 ms - 3808[0m
+[0mOPTIONS / [33m404 [0m2.029 ms - 24[0m
+[0mOPTIONS / [33m404 [0m0.255 ms - 24[0m
+[0mGET / [32m200 [0m1.257 ms - 3808[0m
+[0mGET / [32m200 [0m1.540 ms - 3808[0m
+[0mGET /.git/config [33m404 [0m1.239 ms - 24[0m
+[0mGET / [32m200 [0m4.519 ms - 3808[0m
+[0mGET / [32m200 [0m0.519 ms - 3808[0m
+[0mGET / [32m200 [0m0.611 ms - 3808[0m
+[0mGET / [32m200 [0m0.566 ms - 3808[0m
+[0mGET /Lists/admin.php [33m404 [0m0.582 ms - 24[0m
+[0mGET /jmx-console [33m404 [0m30.250 ms - 24[0m
+
+> blogger@0.0.0 start /home/bitnami/lab6
+> node ./bin/www
+
+(node:11051) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://tasks:tasks@localhost/tasks
+(node:11051) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+[0mGET / [36m304 [0m6.559 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.706 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m1.671 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.873 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.550 ms - -[0m
+[0mPOST /api/login [33m401 [0m31.135 ms - 33[0m
+[0mPOST /api/login [32m200 [0m26.473 ms - 241[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m9.768 ms - -[0m
+Finding blog details { blogid: '5ccca9186624860dd406364a' }
+{ _id: 5ccca9186624860dd406364a,
+  blogtitle: '5r4646',
+  blogtext: 'sdfgfgdf',
+  createdon: 2019-05-03T20:48:24.533Z,
+  __v: 0 }
+[0mGET /api/blogs/5ccca9186624860dd406364a [36m304 [0m3.737 ms - -[0m
+Finding blog details { blogid: '5ccca9186624860dd406364a' }
+{ _id: 5ccca9186624860dd406364a,
+  blogtitle: '5r4646',
+  blogtext: 'sdfgfgdf',
+  createdon: 2019-05-03T20:48:24.533Z,
+  __v: 0 }
+[0mGET /api/blogs/5ccca9186624860dd406364a [36m304 [0m1.831 ms - -[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.792 ms - -[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m3.515 ms - -[0m
+Finding blog details { blogid: '5ccca9186624860dd406364a' }
+{ _id: 5ccca9186624860dd406364a,
+  blogtitle: '5r4646',
+  blogtext: 'sdfgfgdf',
+  createdon: 2019-05-03T20:48:24.533Z,
+  __v: 0 }
+[0mGET /api/blogs/5ccca9186624860dd406364a [36m304 [0m2.524 ms - -[0m
+Finding blog details { blogid: '5ccca9186624860dd406364a' }
+{ _id: 5ccca9186624860dd406364a,
+  blogtitle: '5r4646',
+  blogtext: 'sdfgfgdf',
+  createdon: 2019-05-03T20:48:24.533Z,
+  __v: 0 }
+[0mGET /api/blogs/5ccca9186624860dd406364a [36m304 [0m1.777 ms - -[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.769 ms - -[0m
+Finding blog details { blogid: '5ccca9186624860dd406364a' }
+{ _id: 5ccca9186624860dd406364a,
+  blogtitle: '5r4646',
+  blogtext: 'sdfgfgdf',
+  createdon: 2019-05-03T20:48:24.533Z,
+  __v: 0 }
+[0mGET /api/blogs/5ccca9186624860dd406364a [36m304 [0m2.680 ms - -[0m
+Finding blog details { blogid: '5ccca9186624860dd406364a' }
+{ _id: 5ccca9186624860dd406364a,
+  blogtitle: '5r4646',
+  blogtext: 'sdfgfgdf',
+  createdon: 2019-05-03T20:48:24.533Z,
+  __v: 0 }
+[0mGET /api/blogs/5ccca9186624860dd406364a [36m304 [0m2.007 ms - -[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m3.239 ms - -[0m
+Finding blog details { blogid: '5ccca9186624860dd406364a' }
+{ _id: 5ccca9186624860dd406364a,
+  blogtitle: '5r4646',
+  blogtext: 'sdfgfgdf',
+  createdon: 2019-05-03T20:48:24.533Z,
+  __v: 0 }
+[0mGET /api/blogs/5ccca9186624860dd406364a [36m304 [0m2.428 ms - -[0m
+Finding blog details { blogid: '5ccca9186624860dd406364a' }
+{ _id: 5ccca9186624860dd406364a,
+  blogtitle: '5r4646',
+  blogtext: 'sdfgfgdf',
+  createdon: 2019-05-03T20:48:24.533Z,
+  __v: 0 }
+[0mGET /api/blogs/5ccca9186624860dd406364a [36m304 [0m1.862 ms - -[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.999 ms - -[0m
+[0mGET / [32m200 [0m3.039 ms - 5673[0m
+[0mGET / [32m200 [0m0.789 ms - 5673[0m
+[0mGET / [36m304 [0m0.503 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.694 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.688 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.291 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.445 ms - -[0m
+(node:13417) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connected to mongodb://tasks:tasks@localhost/tasks
+(node:13417) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
