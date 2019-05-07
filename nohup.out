@@ -536,3 +536,204 @@ Getting blogs list
     createdon: 2019-05-06T21:04:52.940Z,
     __v: 0 } ]
 [0mGET /api/blogs [36m304 [0m21.733 ms - -[0m
+[0mGET / [32m200 [0m2.587 ms - 5717[0m
+[0mGET /bloggerApp.js [32m200 [0m0.759 ms - 8241[0m
+[0mGET /nav/navigation.js [32m200 [0m0.452 ms - 730[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.443 ms - 1137[0m
+[0mGET /nav/navigation.html [32m200 [0m0.604 ms - 704[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 },
+  { _id: 5cd0a174bac85138332df95c,
+    blogtitle: 'adss',
+    blogtext: 'dsf',
+    userEmail: 'Itshigh@noon.com',
+    createdon: 2019-05-06T21:04:52.940Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m3.059 ms - 259[0m
+{ blogtitle: 'Prof test',
+  blogtext: 'test',
+  userName: 'Thomas J Rogers',
+  userEmail: 'tjrtechgm@gmail.com' }
+{ _id: 5cd0a448d4602a3843095f3f,
+  blogtitle: 'Prof test',
+  blogtext: 'test',
+  userEmail: 'tjrtechgm@gmail.com',
+  createdon: 2019-05-06T21:16:56.159Z,
+  __v: 0 }
+[0mPOST /api/blogs/ [32m201 [0m33.914 ms - 157[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 },
+  { _id: 5cd0a174bac85138332df95c,
+    blogtitle: 'adss',
+    blogtext: 'dsf',
+    userEmail: 'Itshigh@noon.com',
+    createdon: 2019-05-06T21:04:52.940Z,
+    __v: 0 },
+  { _id: 5cd0a448d4602a3843095f3f,
+    blogtitle: 'Prof test',
+    blogtext: 'test',
+    userEmail: 'tjrtechgm@gmail.com',
+    createdon: 2019-05-06T21:16:56.159Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.671 ms - 409[0m
+Finding blog details { blogid: '5cd0a448d4602a3843095f3f' }
+{ _id: 5cd0a448d4602a3843095f3f,
+  blogtitle: 'Prof test',
+  blogtext: 'test',
+  userEmail: 'tjrtechgm@gmail.com',
+  createdon: 2019-05-06T21:16:56.159Z,
+  __v: 0 }
+[0mGET /api/blogs/5cd0a448d4602a3843095f3f [32m200 [0m7.388 ms - 157[0m
+Finding blog details { blogid: '5cd0a448d4602a3843095f3f' }
+{ _id: 5cd0a448d4602a3843095f3f,
+  blogtitle: 'Prof test',
+  blogtext: 'test',
+  userEmail: 'tjrtechgm@gmail.com',
+  createdon: 2019-05-06T21:16:56.159Z,
+  __v: 0 }
+[0mGET /api/blogs/5cd0a448d4602a3843095f3f [36m304 [0m2.741 ms - -[0m
+Updating blog: 5cd0a448d4602a3843095f3f
+{ _id: '5cd0a448d4602a3843095f3f',
+  blogtitle: 'Prof test',
+  blogtext: 'test!',
+  userEmail: 'tjrtechgm@gmail.com',
+  createdon: '2019-05-06T21:16:56.159Z',
+  __v: 0 }
+(node:14403) DeprecationWarning: collection.findAndModify is deprecated. Use findOneAndUpdate, findOneAndReplace or findOneAndDelete instead.
+[0mPUT /api/blogs/5cd0a448d4602a3843095f3f [32m201 [0m10.231 ms - 157[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 },
+  { _id: 5cd0a174bac85138332df95c,
+    blogtitle: 'adss',
+    blogtext: 'dsf',
+    userEmail: 'Itshigh@noon.com',
+    createdon: 2019-05-06T21:04:52.940Z,
+    __v: 0 },
+  { _id: 5cd0a448d4602a3843095f3f,
+    blogtitle: 'Prof test',
+    blogtext: 'test!',
+    userEmail: 'tjrtechgm@gmail.com',
+    createdon: 2019-05-06T21:16:56.159Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.204 ms - 410[0m
+Finding blog details { blogid: '5cd0a448d4602a3843095f3f' }
+{ _id: 5cd0a448d4602a3843095f3f,
+  blogtitle: 'Prof test',
+  blogtext: 'test!',
+  userEmail: 'tjrtechgm@gmail.com',
+  createdon: 2019-05-06T21:16:56.159Z,
+  __v: 0 }
+[0mGET /api/blogs/5cd0a448d4602a3843095f3f [32m200 [0m2.490 ms - 158[0m
+Finding blog details { blogid: '5cd0a448d4602a3843095f3f' }
+{ _id: 5cd0a448d4602a3843095f3f,
+  blogtitle: 'Prof test',
+  blogtext: 'test!',
+  userEmail: 'tjrtechgm@gmail.com',
+  createdon: 2019-05-06T21:16:56.159Z,
+  __v: 0 }
+[0mGET /api/blogs/5cd0a448d4602a3843095f3f [36m304 [0m1.810 ms - -[0m
+Deleting book entry with id of  5cd0a448d4602a3843095f3f
+{}
+[0mDELETE /api/blogs/5cd0a448d4602a3843095f3f [32m204 [0m3.202 ms - -[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 },
+  { _id: 5cd0a174bac85138332df95c,
+    blogtitle: 'adss',
+    blogtext: 'dsf',
+    userEmail: 'Itshigh@noon.com',
+    createdon: 2019-05-06T21:04:52.940Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m2.244 ms - 259[0m
+[0mPOST /api/login [32m200 [0m20.630 ms - 241[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 },
+  { _id: 5cd0a174bac85138332df95c,
+    blogtitle: 'adss',
+    blogtext: 'dsf',
+    userEmail: 'Itshigh@noon.com',
+    createdon: 2019-05-06T21:04:52.940Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.604 ms - -[0m
+Finding blog details { blogid: '5cd0a174bac85138332df95c' }
+{ _id: 5cd0a174bac85138332df95c,
+  blogtitle: 'adss',
+  blogtext: 'dsf',
+  userEmail: 'Itshigh@noon.com',
+  createdon: 2019-05-06T21:04:52.940Z,
+  __v: 0 }
+[0mGET /api/blogs/5cd0a174bac85138332df95c [36m304 [0m2.547 ms - -[0m
+Finding blog details { blogid: '5cd0a174bac85138332df95c' }
+{ _id: 5cd0a174bac85138332df95c,
+  blogtitle: 'adss',
+  blogtext: 'dsf',
+  userEmail: 'Itshigh@noon.com',
+  createdon: 2019-05-06T21:04:52.940Z,
+  __v: 0 }
+[0mGET /api/blogs/5cd0a174bac85138332df95c [36m304 [0m1.850 ms - -[0m
+Updating blog: 5cd0a174bac85138332df95c
+{ _id: '5cd0a174bac85138332df95c',
+  blogtitle: 'adss',
+  blogtext: 'dsf',
+  userEmail: 'Itshigh@noon.com',
+  createdon: '2019-05-06T21:04:52.940Z',
+  __v: 0 }
+[0mPUT /api/blogs/5cd0a174bac85138332df95c [32m201 [0m3.461 ms - 148[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 },
+  { _id: 5cd0a174bac85138332df95c,
+    blogtitle: 'adss',
+    blogtext: 'dsf',
+    userEmail: 'Itshigh@noon.com',
+    createdon: 2019-05-06T21:04:52.940Z,
+    __v: 0 } ]
+[0mGET /api/blogs [36m304 [0m2.452 ms - -[0m
+Finding blog details { blogid: '5cd0a174bac85138332df95c' }
+{ _id: 5cd0a174bac85138332df95c,
+  blogtitle: 'adss',
+  blogtext: 'dsf',
+  userEmail: 'Itshigh@noon.com',
+  createdon: 2019-05-06T21:04:52.940Z,
+  __v: 0 }
+[0mGET /api/blogs/5cd0a174bac85138332df95c [32m200 [0m2.508 ms - 148[0m
+Finding blog details { blogid: '5cd0a174bac85138332df95c' }
+{ _id: 5cd0a174bac85138332df95c,
+  blogtitle: 'adss',
+  blogtext: 'dsf',
+  userEmail: 'Itshigh@noon.com',
+  createdon: 2019-05-06T21:04:52.940Z,
+  __v: 0 }
+[0mGET /api/blogs/5cd0a174bac85138332df95c [32m200 [0m2.043 ms - 148[0m
+Deleting book entry with id of  5cd0a174bac85138332df95c
+{}
+[0mDELETE /api/blogs/5cd0a174bac85138332df95c [32m204 [0m2.208 ms - -[0m
+Getting blogs list
+[ { _id: 5ccca9186624860dd406364a,
+    blogtitle: '5r4646',
+    blogtext: 'sdfgfgdf',
+    createdon: 2019-05-03T20:48:24.533Z,
+    __v: 0 } ]
+[0mGET /api/blogs [32m200 [0m1.955 ms - 118[0m

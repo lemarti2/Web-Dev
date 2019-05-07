@@ -4,6 +4,7 @@ var blogSchema = new mongoose.Schema({
     blogtext: String,
     userName: String,
     userEmail: String,
+    upVote: {type: Number, "default": 0},
     createdon: {
 	type: Date,
 	"default": Date.now

@@ -148,7 +148,7 @@ app.controller('homeController', function homeController() {
     vm.homeText = "Welcome to my blog website";
 });
 
-app.controller('listController',[ '$http', 'authentication', function listController($http, authentication) {
+app.controller('listController',['$scope', '$http', 'authentication', function listController($scope, $http, authentication) {
     console.log("test");
     var vm = this;
     vm.listHeader = "Blog List";
@@ -166,6 +166,24 @@ app.controller('listController',[ '$http', 'authentication', function listContro
 	    console.log(data);
 	    console.log("successful");
 	})
+
+    vm.incrementVote = function (id) {
+	getBlogById($http, id)
+	    .success(function(data){
+		vm.upVote++;
+		data.upVote++;
+		console.log("likes updated");
+		updateBlogById($http, id, data, authentication)
+		    .success(function(data){
+			console.log("updated");
+			getAllBlogs($http)
+			    .success(function(data) {
+				vm.blogs = data;
+				console.log(data);
+				console.log("successful");
+			    })
+		    })
+	    })}
 }]);
 
 app.controller('editController',[ '$http', '$routeParams', '$location','authentication', function editController( $http, $routeParams, $location, authentication){
